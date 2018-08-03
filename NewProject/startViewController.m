@@ -23,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self addimageview:@"start.jpg"];
-
+    NSLog(@"sa");
    
     UIButton *but3 =[UIButton buttonWithType:UIButtonTypeCustom];
     but3.frame=CGRectMake (LineX(20), LineY(450), LineX(130), LineY(50));
