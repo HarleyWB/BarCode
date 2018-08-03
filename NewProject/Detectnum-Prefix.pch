@@ -1,0 +1,44 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#define IOS7 [[[UIDevice currentDevice] systemVersion]floatValue]>=7
+#endif
+
+#ifdef __cplusplus
+#import <opencv2/opencv.hpp>
+#endif
+// MainScreen Height&Width
+#define Main_Screen_Height      [[UIScreen mainScreen] bounds].size.height
+#define Main_Screen_Width       [[UIScreen mainScreen] bounds].size.width
+
+// 屏幕高度
+
+// 以iPhone5为基准(UI妹纸给你的设计图是iPhone5的),当然你也可以改,但是出图是按照7P(6P)的图片出的,因为大图压缩还是清晰的,小图拉伸就不清晰了,所以只出一套最大的图片即可
+#define XMGiPhone5W 320.0
+#define XMGiPhone5H 568.0
+// 计算比例
+// x比例 1.293750 在iPhone7的屏幕上
+#define XMGScaleX Main_Screen_Width / XMGiPhone5W
+// y比例 1.295775
+#define XMGScaleY Main_Screen_Height / XMGiPhone5H
+// X坐标
+#define LineX(l) l*XMGScaleX
+// Y坐标
+#define LineY(l) l*XMGScaleY
+// 字体
+#define Font(x) [UIFont systemFontOfSize:x*XMGScaleX]
+
+
+

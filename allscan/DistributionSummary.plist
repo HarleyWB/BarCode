@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Detectnum.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>C281E63F2DB518D19B8D8EF2203BEB33482DA377</string>
+				<key>dateExpires</key>
+				<string>2019/7/21</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>CDH983Z99L.com.allbests.allscan</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>CDH983Z99L</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>CDH983Z99L.com.allbests.allscan</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>Detectnum.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>4655e5d6-38fa-4e7c-b0bb-e88766abbde5</string>
+				<key>name</key>
+				<string>iOS Team Store Provisioning Profile: com.allbests.allscan</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>CDH983Z99L</string>
+				<key>name</key>
+				<string>ALLBEST SOFTWARE CO., LTD.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
